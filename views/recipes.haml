@@ -1,0 +1,7 @@
+!!!
+
+%h1 All Recipes
+- @recipes.each do |recipe|
+  %a{href: "/recipes/#{recipe.id}"}
+    %h3= recipe.title
+  %img{src: recipe.photo_url(width: 300, height: 200)}
