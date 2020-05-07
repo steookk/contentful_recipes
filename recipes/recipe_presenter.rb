@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'kramdown'
 
 module Recipes
@@ -11,7 +13,7 @@ module Recipes
     end
 
     def tags_names
-      recipe.tags_names&.join(" ")
+      recipe.tags_names&.join(' ')
     end
 
     def description
@@ -19,7 +21,7 @@ module Recipes
     end
 
     def chef_name
-      "By: " + (recipe.chef_name || "Marley Spoon best recipes")
+      'By: ' + (recipe.chef_name || 'Marley Spoon best recipes')
     end
   end
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'sinatra'
 require 'active_support/all'
 require 'byebug' if development? || test?

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Recipes
   class Recipe < Contentful::Entry
     def photo_url(**args)
@@ -5,7 +7,7 @@ module Recipes
     end
 
     def tags_names
-      fields[:tags]&.map {|tag| tag.name}
+      fields[:tags]&.map { |tag| tag.name }
     end
 
     def chef_name

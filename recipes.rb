@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'contentful'
 
 require_relative 'recipes/recipe'
@@ -16,7 +18,7 @@ module Recipes
     private
 
     def client
-      @client ||= 
+      @client ||=
         Contentful::Client.new(
           space: ENV.fetch('CONTENTFUL_SPACE_ID'),
           access_token: ENV.fetch('CONTENTFUL_ACCESS_TOKEN'),
