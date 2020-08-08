@@ -39,7 +39,7 @@ GEM
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.4)
-    kramdown (2.2.1)
+    kramdown (2.3.0)
       rexml
     minitest (5.14.0)
     multi_json (1.14.1)
